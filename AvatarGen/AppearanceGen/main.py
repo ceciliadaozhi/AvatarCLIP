@@ -118,7 +118,7 @@ class Runner:
         try:
             self.smpl_model_path = self.conf.get_string('general.smpl_model_path')
         except:
-            self.smpl_model_path = '../../smpl_models'
+            self.smpl_model_path = '/kaggle/input/smpl-neutral/'
 
         try:
             self.pose_type = self.conf.get_string('general.pose_type')
@@ -293,7 +293,7 @@ class Runner:
         except:
             template_obj_fname = None
 
-        model_folder = '../../smpl_models'
+        model_folder = '/kaggle/input/smpl-neutral/'
         model_type = 'smpl'
         gender = 'neutral'
         num_betas = 10
