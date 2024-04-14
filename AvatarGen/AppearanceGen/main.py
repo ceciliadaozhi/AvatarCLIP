@@ -293,8 +293,8 @@ class Runner:
         except:
             template_obj_fname = None
 
-        model_folder = '/kaggle/input/smpl-neutral/'
-        model_type = 'smpl'
+        model_folder = '/kaggle/input/'
+        model_type = 'smpl-neutral'
         gender = 'neutral'
         num_betas = 10
         smpl_model = build_layer(
